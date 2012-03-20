@@ -2,7 +2,9 @@ require "catspeak/version"
 require "catspeak/cat"
 
 module Catspeak
-  def self.hello
-  	"Hello World!"
+  def self.cat(name)
+  	Cat.new(name)
   end
+
+
 end
