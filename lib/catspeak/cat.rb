@@ -13,8 +13,7 @@ module Catspeak
 		end
 	
 		def speak(statement = '')
-			#TODO: Make a real translator
-			#human_to_cat(@name,statement)
+			human_to_cat(@name,statement)
 		end
 		
 

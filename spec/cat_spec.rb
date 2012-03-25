@@ -14,9 +14,7 @@ describe 'Cat' do
   end
 
   it "should speak something meaningful" do
-    pending
-    #Catspeak::Cat.new('Kitty').speak('Hello').should == "My Name is Kitty. And I hear Hello."
-    #Catspeak::Cat.new('Kitty').speak('Hello').should == "Kitty Hello"
+    Catspeak::Cat.new('Kitty').speak('Hello').should == 'Me!M Mow^Mu!Mow~MEOW!!!Me~~Ma'
   end
 
 end

@@ -17,19 +17,19 @@ describe "CatLang" do
 	include Translator::CatLang
 
 	it "should translate cat lang to number lang" do
-		cat_to_number('Mea!MeowMaao ').should == [120, 1, 147]
+		cat_to_number('Mea!MeowMaao!').should == [120, 1, 147]
 	end
 
 	it "should translate number lang to cat lang" do
-	  number_to_cat([120, 1, 147]).should == 'Mea!MeowMaao '
+	  number_to_cat([120, 1, 147]).should == 'Mea!MeowMaao!'
 	end
 
 	it "should translate human lang to cat lang" do
-	  human_to_cat("Kitty","Hello").should == 'Me!M Mow^Mu!Mow~MEOW!!!Me~~Ma'
+	  human_to_cat("Kitty","Hello").should == 'MM M^Mu!M~MEOW!!!Mi? Ma'
 	end
 
 	it "should translate cat lang to human lang" do
-	  cat_to_human("Kitty",'Me!M Mow^Mu!Mow~MEOW!!!Me~~Ma').should == "Hello"
+	  cat_to_human("Kitty",'MM M^Mu!M~MEOW!!!Mi? Ma').should == "Hello"
 	end
 
 	it "should be consistent in translating betwen cat and human lang" do
