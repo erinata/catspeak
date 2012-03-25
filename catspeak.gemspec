@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- encoding: utf-8 -*-  
 $:.push File.expand_path("../lib", __FILE__)
 require "catspeak/version"
 
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{Catspeak provides translation between English and Cats' language}
   s.description = %q{You can view it as some kind of encryption and decrpytion gem........... but cats do speak.}
-
+  # TODO: write better description  
   s.rubyforge_project = "catspeak"
 
   s.files         = `git ls-files`.split("\n")
@@ -19,6 +19,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
+  s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
 end
+
+
+
