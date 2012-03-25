@@ -1,4 +1,4 @@
-require 'catspeak'
+require 'catspeak/cat'
 
 describe 'Cat' do	
   it "should have a name" do
@@ -14,26 +14,9 @@ describe 'Cat' do
   end
 
   it "should speak something meaningful" do
-    Catspeak::Cat.new('Kitty').speak('Hello').should == "My Name is Kitty. And I hear Hello."
+    pending
+    #Catspeak::Cat.new('Kitty').speak('Hello').should == "My Name is Kitty. And I hear Hello."
+    #Catspeak::Cat.new('Kitty').speak('Hello').should == "Kitty Hello"
   end
 
-end
-
-describe "Catspeak" do	
-	include Catspeak
-
-  it "should create cats" do    
-    cat().should be_an_instance_of Catspeak::Cat
-  end
-
-end
-
-describe "CatLang" do
-#  it "should response to get count" do
-#    Catspeak::CatLang.new().get_count('','').should respond_to :get_count
-#  end
-#
-#  it "should get correct count" do
-#    Catspeak::CatLang.new().get_count('aaaaa','a').should == 'a,1,2,3,4,5'
-#  end
 end

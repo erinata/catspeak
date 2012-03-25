@@ -1,5 +1,11 @@
+require 'catspeak/translator'
+
+
 module Catspeak
+	
 	class Cat
+		include Translator::CatLang
+
 		attr_accessor :name
 
 		def initialize(name = '')
@@ -8,20 +14,12 @@ module Catspeak
 	
 		def speak(statement = '')
 			#TODO: Make a real translator
-			"My Name is #{@name}. And I hear #{statement}."  
+			#human_to_cat(@name,statement)
 		end
 		
 
 	end
 
 
-	class CatLang
-		def self.to_cat_lang(statement)
-			# NOTE: 
-
-		end
-
-
-
-	end
+	
 end
