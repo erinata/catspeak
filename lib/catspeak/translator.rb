@@ -10,8 +10,7 @@ module Translator
 			#number_text = Zlib::deflate(number_text, 1)
 			number_text = number_text.bytes.to_a
 			number_text
-		end
-		
+		end		
 
 		def number_to_human(name, number_text)
 			human_text = ''

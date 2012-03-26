@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["erinata"]
   s.email       = ["erinata@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{Catspeak provides translation between English and Cats' language}
+  s.summary     = %q{Catspeak provides translation between Human Language and Cats' language}
   s.description = %q{You can view it as some kind of encryption and decrpytion gem........... but cats do speak.}
   # TODO: write better description  
   s.rubyforge_project = "catspeak"
