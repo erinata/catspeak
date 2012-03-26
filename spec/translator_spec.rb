@@ -43,4 +43,5 @@ describe "CatLang" do
 	it "should have dictionary with unique words" do
 	  cat_dict.uniq.should eq(cat_dict)
 	end
+
 end

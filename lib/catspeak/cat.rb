@@ -16,6 +16,9 @@ module Catspeak
 			human_to_cat(@name,statement)
 		end
 		
+		def hear(statement = '')
+			cat_to_human(@name,statement)
+		end
 
 	end
 

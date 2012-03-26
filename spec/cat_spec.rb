@@ -13,8 +13,12 @@ describe 'Cat' do
     Catspeak::Cat.new('Kitty').should respond_to :speak
   end
 
-  it "should speak something meaningful" do
-    Catspeak::Cat.new('Kitty').speak('Hello').should == 'Me!M Mow^Mu!Mow~MEOW!!!Me~~Ma'
+  it "should speak in cat lang" do
+    Catspeak::Cat.new('Kitty').speak('Hello').should == 'MM M^Mu!M~MEOW!!!Mi? Ma'
+  end
+
+  it "should understand cat lang" do
+    Catspeak::Cat.new('Kitty').hear('MM M^Mu!M~MEOW!!!Mi? Ma').should == 'Hello'
   end
 
 end
