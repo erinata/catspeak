@@ -25,11 +25,11 @@ describe "CatLang" do
 	end
 
 	it "should translate human lang to cat lang" do
-	  human_to_cat("Kitty","Hello").should == 'mEOU MAow?~?~maow!---MeeoW?!!! '
+	  human_to_cat("Kitty","Hello").should == 'mEOU MAow??!!maow-??? MeeoW???'
 	end
 
 	it "should translate cat lang to human lang" do
-	  cat_to_human("Kitty",'mEOU MAow?~?~maow!---MeeoW?!!! ').should == "Hello"
+	  cat_to_human("Kitty",'mEOU MAow??!!maow-??? MeeoW???').should == "Hello"
 	end
 
 	it "should be consistent in translating betwen cat and human lang" do
