@@ -17,31 +17,47 @@ describe "CatLang" do
 	include Translator::CatLang
 
 	it "should translate cat lang to number lang" do
-		cat_to_number('Mea!MeowMaao!').should == [120, 1, 147]
+		cat_to_number('MI  ee').should == [120, 1, 147]
 	end
 
 	it "should translate number lang to cat lang" do
-	  number_to_cat([120, 1, 147]).should == 'Mea!MeowMaao!'
+	  number_to_cat([120, 1, 147]).should == 'MI  ee'
 	end
 
 	it "should translate human lang to cat lang" do
-	  human_to_cat("Kitty","Hello").should == 'MM M^Mu!M~MEOW!!!Mi? Ma'
+	  human_to_cat("Kitty","Hello").should == 'mEOU MAow?~?~maow!---MeeoW?!!! '
 	end
 
 	it "should translate cat lang to human lang" do
-	  cat_to_human("Kitty",'MM M^Mu!M~MEOW!!!Mi? Ma').should == "Hello"
+	  cat_to_human("Kitty",'mEOU MAow?~?~maow!---MeeoW?!!! ').should == "Hello"
 	end
 
 	it "should be consistent in translating betwen cat and human lang" do
 	  cat_to_human("Kitty", human_to_cat("Kitty",'How are you doing?')).should == 'How are you doing?'
 	end
 
-	it "should have dictionary with length 256" do
-	  cat_dict.length.should eq(256)
+	it "should have char dictionary with length 256" do
+	  cat_char_dict.length.should eq(256)
 	end
 
-	it "should have dictionary with unique words" do
-	  cat_dict.uniq.should eq(cat_dict)
+	it "should have char dictionary with unique words" do
+	  cat_char_dict.uniq.should eq(cat_char_dict)
+	end
+
+	it "should have tone dictionary with length 256" do
+	  cat_tone_dict.length.should eq(256)
+	end
+
+	it "should have tone dictionary with unique words" do
+	  cat_tone_dict.uniq.should eq(cat_tone_dict)
+	end
+
+	it "should decompose array correctly" do
+	  decompose('Meow!!Mea ? Mi^^ Moo~~~Meow~Maao ***').should == ['Meow','!!','Mea',' ? ','Mi','^^ ','Moo','~~~','Meow','~','Maao',' ***']
+	end
+
+	it "should decompose array with odd index correctly" do
+	  decompose('Meow!!Mea ? Mi^^ Moo~~~Meow~Maao').should == ['Meow','!!','Mea',' ? ','Mi','^^ ','Moo','~~~','Meow','~','Maao']
 	end
 
 end
