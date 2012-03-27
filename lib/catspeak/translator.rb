@@ -139,13 +139,14 @@ module Translator
 		end
 
 		def decompose(statement)
-			a1 = statement.split(/\W+/)
-			a2 = statement.split(/\w+/)
-			a2.delete_at(0)
-			a2.each_index do |i| 
-				a1.insert(2*i+1,a2[i])
-			end
-			a1
+			statement.scan(/(\w+)?(\W+)?/).flatten.compact
+			#a1 = statement.split(/\W+/)
+			#a2 = statement.split(/\w+/)
+			#a2.delete_at(0)
+			#a2.each_index do |i| 
+			#	a1.insert(2*i+1,a2[i])
+			#end
+			#a1
 
 			#a3 = []
 			#a1.each_index do |i| 

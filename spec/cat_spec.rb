@@ -14,11 +14,11 @@ describe 'Cat' do
   end
 
   it "should speak in cat lang" do
-    Catspeak::Cat.new('Kitty').speak('Hello').should == 'MM M^Mu!M~MEOW!!!Mi? Ma'
-  end
+    Catspeak::Cat.new('Kitty').speak('Hello').should == 'mEOU MAow??!!maow-??? MeeoW????'
+  end 
 
   it "should understand cat lang" do
-    Catspeak::Cat.new('Kitty').hear('MM M^Mu!M~MEOW!!!Mi? Ma').should == 'Hello'
+    Catspeak::Cat.new('Kitty').hear('mEOU MAow??!!maow-??? MeeoW????').should == 'Hello'
   end
 
 end
