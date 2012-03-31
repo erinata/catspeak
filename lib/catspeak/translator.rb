@@ -3,6 +3,14 @@ require 'catspeak/encrypter'
 	
 module Translator
 	module NumberLang
+		# TODO: consider restructuring the whole Gem. There should be no "NumberLang". 
+		# 			Instead there should be a HumanLang, which define "human_to_number" and "number_to_human"
+		#       While CatLang also define "cat_to_number" and "cat_to_human"
+		# 			And the Cat class simply implement both humanlang and catlang
+		#  			Together with the concept of making CatLang module a generic module. There should be 2 generic module of translator. Say "encrypt translator" and "dictionary translator", the HumanLang and and CatLang implement them respectively.
+
+		# TODO: HumanLang class should be English instead. So that future lang can deal with Unicode languages
+		
 		def human_to_number(name, human_text)
 			number_text = human_text
 			#number_text = Zlib::deflate(human_text, 1)
@@ -22,6 +30,12 @@ module Translator
 		end
 
 	end
+
+	# TODO: should turn this CatLang module into a generic Lang module. 
+	# 			Where there are char_dict instead of cat_char_dict ....etc.
+	# 			And the CatLang should just overwrite the char_dict files with cat specific dictionary
+	# 			The cat specific thing should be specified in the Cat Class, in the Cat class it should include the CatLang to show that it's a cat
+
 
 	module CatLang
 		include NumberLang
@@ -139,6 +153,8 @@ module Translator
 		end
 
 		def decompose(statement)
+			# TODO: should get the regular expression from the dictionary. Simply get all the characters from it and get the unique characters
+
 			statement.scan(/(\w+)?(\W+)?/).flatten.compact
 			#a1 = statement.split(/\W+/)
 			#a2 = statement.split(/\w+/)

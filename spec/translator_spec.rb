@@ -14,6 +14,8 @@ describe "NumberLang" do
 end
 
 describe "CatLang" do
+	# TODO: test should cover whether the char and tone dictionary have mutually exclusive characters
+
 	include Translator::CatLang
 
 	it "should translate cat lang to number lang" do

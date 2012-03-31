@@ -18,7 +18,7 @@ describe 'Cat' do
   end 
 
   it "should understand cat lang" do
-    Catspeak::Cat.new('Kitty').hear('mEOU MAow??!!maow-??? MeeoW????').should == 'Hello'
+    Catspeak::Cat.new('Kitty').listen('mEOU MAow??!!maow-??? MeeoW????').should == 'Hello'
   end
 
 end

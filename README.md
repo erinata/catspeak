@@ -64,6 +64,7 @@ term
 : definition
 : another definition
 
+
 | A simple | table |
 | with multiple | lines|
 
@@ -103,4 +104,7 @@ This is <span style="color: red">written in red</span>.
 This is an HTML example.
 
 *[HTML]: Hyper Text Markup Language
+
+
+
 
