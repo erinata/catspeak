@@ -1,110 +1,38 @@
+# Catspeak
 
-# sjdfklsjdlfkjsdfsd
-sdfjsdklfjsdfs  
-fsd
-fsd
-# sdkfjsdlkf
-fd 
+This is a gem for translating human language to cat language.
 
-## sdjfklsdjfsdfsdfsd
-		sdfsdfsdfs
-		f
-		sdfsd
-		
-		```ruby
-		dsfskldfjlsk
-		fsdfslfms
-		f
-		fd
-		```
+## Installation
 
-		fsd
+    gem install catspeak
 
+## Usage
 
-# sdmflksdjf
-    //Scope? (Defined in theme files.)
-    //Examples: (keyword|string|number)
-    "quote_scope" : "entity.name.class",
-    "curly_scope" : "entity.name.class",
-    "round_scope" : "entity.name.class",
-    "square_scope": "entity.name.class",
-    "angle_scope" : "entity.name.class",
-    "tag_scope"   : "entity.name.class",
+To use catspeak, you have to require the gem
 
+    require 'catspeak'
 
-sdfsdf
+To create a new cat,
 
-## sfjklsdjfsd
+    tom = Catspeak::Cat.new("Tom")
 
-<key>fileTypes</key>
-<array>
-	<string>mdown</string>
-	<string>markdown</string>
-	<string>markdn</string>
-	<string>md</string>
-</array>
+To translate human language to cat language,
+
+    puts tom.speak("Hello!")
+
+You will get
+
+    "meaO?-?- Me--Mw--mIU\\(-.-)/ "
+
+To translate cat language back to human language,
+
+    puts tom.listen("meaO?-?- Me--Mw--mIU\\(-.-)/ ")
+
+You will get
+
+    "Hello!"
 
 
-* sdfsdfsd
-* sdfsdfsd
-*  sdfsdfsdfsdfw3e
+## License
 
----
-
-1. dsf;sdf
-2. sdfsdfsd
-3. sdfaewf3f `dsfklsdjflks`
-
-This is a text with a
-footnote[^1].
-
-[^1]: And here is the definition.
-
-term
-: definition
-: another definition
-
-
-| A simple | table |
-| with multiple | lines|
-
-
-## sdkfsdfksdfsd
-
-> Somekfmeskfmekef
-> ddfgdfghdfhdf
->> dfgdfgdf
->> dfgdfgdf
-> d323451234
-
-## sflkwe4we
-
-~~~~~~
-sfsd
-fsd
-sd
-fsdf
-
-~~~~~~~~~~~~
-
-
-
-## sdhfj2wo3423
-12312
-1123*sjdfhkjsdhfsd* 21312312
-12321 _sjfhkswjfh_ jkshfksd
-
-A [link](http://kramdown.rubyforge.org) to the kramdown homepage.
-	
-
-This is *red*{: style="color: red"}.
-
-This is <span style="color: red">written in red</span>.
-
-This is an HTML example.
-
-*[HTML]: Hyper Text Markup Language
-
-
-
-
+Currently not released under any license
