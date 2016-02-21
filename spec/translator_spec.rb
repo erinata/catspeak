@@ -1,4 +1,4 @@
-require 'catspeak\Translator'
+require 'catspeak/Translator'
 
 describe "NumberLang" do
 	include Translator::NumberLang
