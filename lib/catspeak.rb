@@ -3,7 +3,14 @@ require "catspeak/cat"
 
 module Catspeak
 	def cat(name = '')
-  	Cat.new(name)
-  end
+  		Cat.new(name)
+	end
 end
+
+
+
+
+
+
+
 

@@ -1,0 +1,83 @@
+commit e6580fd785f44b53db4223b6063cc0e01cef1b89
+Author: Chungsang Tom Lam <erinata@gmail.com>
+Date:   Sun Feb 21 04:12:02 2016 -0500
+
+    fix typo
+
+commit 3f5aa895ba583b52c6617a194863d6a009d34772
+Author: erinata <erinata@gmail.com>
+Date:   Tue Apr 3 07:13:55 2012 -0500
+
+    write readme
+
+commit 45603b7f0c727b67507ee8251e02f40c6360641a
+Author: erinata <erinata@gmail.com>
+Date:   Fri Mar 30 20:12:35 2012 -0500
+
+    at more comment as TODO
+
+commit 998cbba60e5d7abf87f6949a59f43853403c05e6
+Author: erinata <erinata@gmail.com>
+Date:   Tue Mar 27 00:32:36 2012 -0500
+
+    use better method to decompose
+
+commit 1ead258e584ed9e7b5ce84284e570f29f24ccef8
+Author: erinata <erinata@gmail.com>
+Date:   Mon Mar 26 14:17:32 2012 -0500
+
+    treak the cat dict a little bit
+
+commit 3a9bd4d3912f46425c69903f686c2bf54d118f6a
+Author: erinata <erinata@gmail.com>
+Date:   Mon Mar 26 04:51:20 2012 -0500
+
+    change dictionary
+
+commit 741cb3cdfced1b81eea7bc71b6c6b8ff5996b4dc
+Author: erinata <erinata@gmail.com>
+Date:   Mon Mar 26 01:04:14 2012 -0500
+
+    dummy
+
+commit f2dd052fad0a4507667c434bcfa38c9f1147913e
+Author: erinata <erinata@gmail.com>
+Date:   Mon Mar 26 00:12:24 2012 -0500
+
+    add hear method
+
+commit d51eb0515f5325748979d25044e9ed1333afe8de
+Author: erinata <erinata@gmail.com>
+Date:   Sun Mar 25 06:53:02 2012 -0500
+
+    add translator to speak
+
+commit 27fc15f671f1c6b9de45d5e03d710c5649bd6e9f
+Author: erinata <erinata@gmail.com>
+Date:   Sun Mar 25 06:50:02 2012 -0500
+
+    Add CatLang
+
+commit 2e20371d21010f4a8752cc7876c0a742a8571c2f
+Author: erinata <erinata@gmail.com>
+Date:   Sat Mar 24 21:17:43 2012 -0500
+
+    add spec
+
+commit 688a25307c79a44d052df651dd627f8769eccf20
+Author: erinata <erinata@gmail.com>
+Date:   Tue Mar 20 14:51:52 2012 -0500
+
+    add class method to make new cat
+
+commit 43c10d910677dbf6f266c6bb1f9d440b9ebedf37
+Author: erinata <erinata@gmail.com>
+Date:   Tue Mar 20 14:45:42 2012 -0500
+
+    add stub for cat class and speak method
+
+commit a6bdb9a74562eef3b0c5c39e117ac8b920fbaedd
+Author: erinata <erinata@gmail.com>
+Date:   Tue Mar 20 14:25:18 2012 -0500
+
+    initial commit

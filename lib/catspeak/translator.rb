@@ -144,7 +144,7 @@ module Translator
 
 		def human_to_cat(name, human_text)
 			number_text = human_to_number(name, human_text)
-			cat_text = number_to_cat(number_text)
+			number_to_cat(number_text)
 		end
 
 		def cat_to_human(name, cat_text)

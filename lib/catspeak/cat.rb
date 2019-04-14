@@ -21,7 +21,4 @@ module Catspeak
 		end
 
 	end
-
-
-	
 end
